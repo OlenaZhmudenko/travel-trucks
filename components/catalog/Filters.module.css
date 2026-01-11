@@ -1,0 +1,171 @@
+.filters {
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 360px;
+    flex-shrink: 0;
+}
+
+.section {
+    margin-bottom: 32px;
+}
+
+.sectionTitle {
+    font-size: 16px;
+    font-weight: 500;
+    color: #6c717b;
+    margin-bottom: 12px;
+}
+
+.locationWrapper {
+    position: relative;
+}
+
+.locationIcon {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #101828;
+}
+
+.locationInput {
+    width: 100%;
+    padding: 18px 18px 18px 48px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    font-size: 16px;
+    color: #101828;
+    font-family: inherit;
+}
+
+.locationInput::placeholder {
+    color: #6c717b;
+}
+
+.locationInput:focus {
+    outline: 2px solid #e44848;
+    outline-offset: 0;
+}
+
+.filtersTitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: #101828;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #dadde1;
+}
+
+.equipmentGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.equipmentItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 12px;
+    border: 1px solid #dadde1;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+    background-color: #fff;
+}
+
+.equipmentItem:hover {
+    border-color: #e44848;
+}
+
+.equipmentItem.active {
+    border-color: #e44848;
+    background-color: #fff5f5;
+}
+
+.equipmentIcon {
+    color: #101828;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.equipmentLabel {
+    font-size: 14px;
+    color: #101828;
+    text-align: center;
+}
+
+.hiddenCheckbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.vehicleTypeTitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: #101828;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #dadde1;
+}
+
+.vehicleTypeGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-bottom: 32px;
+}
+
+.vehicleTypeItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 12px;
+    border: 1px solid #dadde1;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+    background-color: #fff;
+}
+
+.vehicleTypeItem:hover {
+    border-color: #e44848;
+}
+
+.vehicleTypeItem.active {
+    border-color: #e44848;
+    background-color: #fff5f5;
+}
+
+.vehicleTypeIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #101828; 
+}
+
+.vehicleTypeIcon img {
+    display: block;
+}
+
+.vehicleTypeLabel {
+    font-size: 14px;
+    color: #101828;
+    text-align: center;
+}
+
+.hiddenRadio {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.searchButton {
+    width: 100%; }

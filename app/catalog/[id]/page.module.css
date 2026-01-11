@@ -1,0 +1,102 @@
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 48px 64px;
+}
+
+.header {
+    margin-bottom: 24px;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #101828;
+    margin-bottom: 8px;
+}
+
+.ratingLocation {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.ratingWrapper {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.locationWrapper {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #101828;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: 600;
+    color: #101828;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #475467;
+    margin-bottom: 44px;
+}
+
+.tabs {
+    display: flex;
+    gap: 40px;
+    border-bottom: 1px solid #dadde1;
+    margin-bottom: 44px;
+}
+
+.tab {
+    padding: 12px 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #475467;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.2s;
+}
+
+.tab:hover {
+    color: #101828;
+}
+
+.tab.active {
+    color: #101828;
+}
+
+.tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: #e44848;
+    border-radius: 2px 2px 0 0;
+}
+
+.content {
+    display: flex;
+    gap: 40px;
+}
+
+.tabContent {
+    flex: 1;
+    border: 1px solid #dadde1;
+    border-radius: 10px;
+}
+
+.bookingWrapper {
+    flex-shrink: 0;
+    width: 448px; }

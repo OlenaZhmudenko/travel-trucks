@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.star {
+    transition: color 0.2s;
+}
+
+.filled {
+    fill: #ffc531;
+    color: #ffc531;
+}
+
+.empty {
+    fill: none;
+    color: #d1d5db;
+}
+
+.number {
+    margin-left: 4px;
+    font-size: 14px;
+    color: #6c717b; }

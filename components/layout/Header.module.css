@@ -1,0 +1,63 @@
+.header {
+    border-bottom: 1px solid #f7f7f7;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 64px;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    height: 80px; 
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #101828;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.logo:hover {
+    color: #e44848;
+}
+
+.logoAccent {
+    color: #e44848;
+}
+
+.navList {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.navLink {
+    font-size: 16px;
+    font-weight: 500;
+    color: #101828;
+    text-decoration: none;
+    transition: color 0.2s;
+    cursor: pointer;
+}
+
+.navLink:hover {
+    color: #e44848;
+}
+
+.navLink.active {
+    color: #e44848; }

@@ -1,0 +1,63 @@
+.features {
+    padding: 44px;
+}
+
+.equipmentList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 44px;
+}
+
+.equipmentItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 18px;
+    background-color: #f7f7f7;
+    border-radius: 100px;
+    font-size: 16px;
+    color: #101828;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    color: #101828;
+}
+
+.detailsSection {
+    border-top: 1px solid #dadde1;
+    padding-top: 24px;
+}
+
+.detailsTitle {
+    font-size: 20px;
+    font-weight: 600;
+    color: #101828;
+    margin-bottom: 24px;
+}
+
+.detailsGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.detailRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+}
+
+.detailLabel {
+    font-size: 16px;
+    color: #101828;
+    text-transform: capitalize;
+}
+
+.detailValue {
+    font-size: 16px;
+    font-weight: 500;
+    color: #101828; }
