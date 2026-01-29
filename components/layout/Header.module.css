@@ -1,22 +1,30 @@
 .header {
-    border-bottom: 1px solid #f7f7f7;
-    background-color: #fff;
     position: sticky;
     top: 0;
     z-index: 50;
+    transition: background-color 0.2s;
+}
+
+.homeHeader {
+    background-color: #fff;
+    border-bottom: none;
+}
+
+.defaultHeader {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #f2f4f7;
 }
 
 .container {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 64px;
+    padding: 24px 64px;
 }
 
 .nav {
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
-    height: 80px; 
 }
 
 .logo {
@@ -27,12 +35,8 @@
     transition: color 0.2s;
 }
 
-.logo:hover {
-    color: #e44848;
-}
-
 .logoAccent {
-    color: #e44848;
+    color: #6c717b;
 }
 
 .navList {
@@ -49,6 +53,7 @@
 .navLink {
     font-size: 16px;
     font-weight: 500;
+    line-height: 1.5;
     color: #101828;
     text-decoration: none;
     transition: color 0.2s;

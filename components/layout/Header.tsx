@@ -15,8 +15,10 @@ export const Header: React.FC = () => {
     return pathname.startsWith(path);
   };
 
+  const isHomePage = pathname === '/';
+
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} ${isHomePage ? styles.homeHeader : styles.defaultHeader}`}>
       <div className={styles.container}>
         <nav className={styles.nav}>
         
