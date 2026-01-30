@@ -15,7 +15,7 @@ export const Hero: React.FC = () => {
             You can find everything you want in our catalog
           </p>
           <Link href="/catalog">
-            <Button size="lg">
+            <Button size="md">
               View Now
             </Button>
           </Link>
