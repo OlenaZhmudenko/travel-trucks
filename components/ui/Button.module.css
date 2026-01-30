@@ -43,16 +43,19 @@
 .sm {
     padding: 8px 32px;
     font-size: 14px;
+    font-weight: 500;
 }
 
 .md {
     padding: 16px 48px;
     font-size: 16px;
+    font-weight: 500;
 }
 
 .lg {
     padding: 20px 64px;
     font-size: 18px;
+    font-weight: 500;
 }
 
 .loading {

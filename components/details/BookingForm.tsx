@@ -97,6 +97,7 @@ export const BookingForm: React.FC = () => {
           />
         </div>
 
+        <div className={styles.submitButtonWrapper}>
         <Button
           type="submit"
           isLoading={isSubmitting}
@@ -104,7 +105,8 @@ export const BookingForm: React.FC = () => {
           className={styles.submitButton}
         >
           Send
-        </Button>
+          </Button>
+        </div>  
       </form>
     </div>
   );

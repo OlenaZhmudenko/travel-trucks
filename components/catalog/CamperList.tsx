@@ -43,11 +43,10 @@ export const CamperList: React.FC<CamperListProps> = ({
         <div className={styles.loadMoreWrapper}>
           <Button
             onClick={onLoadMore}
-            isLoading={isLoading}
             disabled={isLoading}
             className={styles.loadMoreButton}
           >
-            Load more
+            {isLoading ? 'Loading...' : 'Load more'}
           </Button>
         </div>
       )}

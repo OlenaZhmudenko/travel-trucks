@@ -25,10 +25,28 @@
 .loadMoreWrapper {
     display: flex;
     justify-content: center;
-    margin-top: 32px;
-    padding-top: 32px;
-    border-top: 1px solid #dadde1;
+    margin-top: 40px;
 }
 
 .loadMoreButton {
-    min-width: 200px; }
+    border: 1px solid #dadde1;
+    border-radius: 200px;
+    padding: 16px 32px;
+    min-width: 145px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: transparent;
+    color: #101828;
+}
+
+.loadMoreButton:hover:not(:disabled) {
+    border-color: #d84343;
+    background-color: transparent;
+}
+
+.loadMoreButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
