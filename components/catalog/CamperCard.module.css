@@ -79,7 +79,7 @@
 }
 
 .favoriteIcon.active {
-    fill: #e44848;
+    fill: none;
     color: #e44848;
 }
 

@@ -93,8 +93,8 @@
 
 .tabContent {
     flex: 1;
-    border: 1px solid #dadde1;
     border-radius: 10px;
+    background-color: #f7f7f7;
 }
 
 .bookingWrapper {
