@@ -44,7 +44,8 @@ export interface Gallery {
   
   export interface FilterParams {
     location?: string;      
-    form?: string;         
+    form?: string;   
+    transmission?: string;
     AC?: boolean;          
     kitchen?: boolean;      
     TV?: boolean;          

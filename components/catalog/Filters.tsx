@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { MapPin, Wind, ChefHat, Tv, Bath } from 'lucide-react';
+import { MapPin, Wind, ChefHat, Tv, Bath, Settings } from 'lucide-react';
 import { FilterParams } from '@/lib/types/camper';
 import { Button } from '@/components/ui/Button';
 import styles from './Filters.module.css';
@@ -16,6 +16,7 @@ export const Filters: React.FC<FiltersProps> = ({ onApplyFilters, isLoading }) =
   const [location, setLocation] = useState('');
   const [equipment, setEquipment] = useState<Record<string, boolean>>({
     AC: false,
+    transmission: false,
     kitchen: false,
     TV: false,
     bathroom: false,
@@ -37,6 +38,7 @@ export const Filters: React.FC<FiltersProps> = ({ onApplyFilters, isLoading }) =
     }
 
     if (equipment.AC) filters.AC = true;
+    if (equipment.transmission) filters.transmission = 'automatic';
     if (equipment.kitchen) filters.kitchen = true;
     if (equipment.TV) filters.TV = true;
     if (equipment.bathroom) filters.bathroom = true;
@@ -74,6 +76,7 @@ export const Filters: React.FC<FiltersProps> = ({ onApplyFilters, isLoading }) =
         <div className={styles.equipmentGrid}>
           {[
             { key: 'AC', icon: <Wind size={32} />, label: 'AC' },
+            { key: 'transmission', icon: <Settings size={32} />, label: 'Automatic'},
             { key: 'kitchen', icon: <ChefHat size={32} />, label: 'Kitchen' },
             { key: 'TV', icon: <Tv size={32} />, label: 'TV' },
             { key: 'bathroom', icon: <Bath size={32} />, label: 'Bathroom' },

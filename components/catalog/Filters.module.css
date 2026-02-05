@@ -61,7 +61,7 @@
 .equipmentGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
+    gap: 10px;
     margin-bottom: 24px;
 }
 
@@ -149,6 +149,7 @@
     align-items: center;
     justify-content: center;
     color: #101828; 
+    font-size: 20px;
 }
 
 .vehicleTypeIcon img {

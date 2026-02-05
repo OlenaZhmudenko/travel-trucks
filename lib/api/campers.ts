@@ -15,6 +15,9 @@ export const getCampers = async (
       if (filters.form) {
         params.form = filters.form;
       }
+      if (filters.transmission) {
+        params.transmission = filters.transmission;
+      }
         
       if (filters.AC) params.AC = true;
       if (filters.kitchen) params.kitchen = true;
